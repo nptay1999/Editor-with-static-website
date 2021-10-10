@@ -1,0 +1,36 @@
+body {
+  background-color: aliceblue;
+  font-family: Roboto, sans-serif;
+}
+.editor-area {
+  display:grid;
+  grid-template-columns: 100px 1fr 100px;
+  grid-template-rows: auto;
+  grid-template-areas: "paddingL main paddingR";
+}
+#editorjs {
+  background-color: white;
+  border-radius: 10px;
+  grid-area: main;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.function-area {
+  grid-area: main;
+}
+button {
+  background-color: rgb(22, 161, 161);
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 30px;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+  transition: 250ms all ease-in-out;
+}
+button:hover,
+button:active {
+  background-color: rgb(19, 126, 126);
+}
